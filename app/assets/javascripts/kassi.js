@@ -629,7 +629,7 @@ function initialize_new_listing_form(
   auto_resize_text_areas("listing_description_textarea");
 }
 
-function initialize_send_message_form(locale, message_type) {
+function initialize_send_message_form(locale) {
   auto_resize_text_areas("text_area");
   $('textarea').focus();
   var form_id = "#new_listing_conversation";
@@ -640,12 +640,12 @@ function initialize_send_message_form(locale, message_type) {
     },
     submitHandler: function(form) {
       disable_and_submit(form_id, form, "false", locale);
-      report_analytics_event(["message", "sent", message_type]);
+      report_analytics_event(["message", "sent"]);
     }
   });
 }
 
-function initialize_send_person_message_form(locale, message_type) {
+function initialize_send_person_message_form(locale) {
   auto_resize_text_areas("text_area");
   $('textarea').focus();
   var form_id = "#new_conversation";
@@ -655,7 +655,7 @@ function initialize_send_person_message_form(locale, message_type) {
     },
     submitHandler: function(form) {
       disable_and_submit(form_id, form, "false", locale);
-      report_analytics_event(["message", "sent", message_type]);
+      report_analytics_event(["message", "sent"]);
     }
   });
 }
