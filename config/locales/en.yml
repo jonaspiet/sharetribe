@@ -82,7 +82,8 @@ en:
       edit_look_and_feel:
         edit_community_look_and_feel: "Edit marketplace \"%{community_name}\" look and feel"
         community_logo: "Desktop logo"
-        community_logo_icon: "Logo for social networks and mobile devices"
+        community_logo_icon: "Logo for social networks & mobile devices" 
+        # "and" changed to "&"
         community_cover_photo: "Cover photo"
         small_community_cover_photo: "Small cover photo"
         favicon: Favicon
